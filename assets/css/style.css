@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #394049;
+}
+
+.box {
+    height: 80%;
+    width: 90%;
+    background-image:linear-gradient(to right,rgb(23, 32, 42, 0.99) 40%, rgb(23,32,42,0.7)) ,url("../imgs/mountain.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    color: white;
+    padding: 50px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    text-transform: capitalize;
+    box-shadow: 4px 4px 17px 0px black;
+}
+.box a {
+    color: white;
+}
+.box button{
+    border: 0;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: #394049;
+    color: white;
+    font-size: 19px;
+    margin-top: -19px;
+}
+.box input{
+    border: 0;
+    outline: none;
+    width: 50%;
+    padding: 12px 25px;
+    border-radius: 20px;
+    background-color: #394049;
+}
+@media screen and (max-width:770px) {
+    .box input{
+        width: fit-content;
+        padding: 6px 15px;
+    }
+    .box {
+        height: fit-content;
+    }
+    
+}
+.box input::placeholder{
+    color: white;
+}
